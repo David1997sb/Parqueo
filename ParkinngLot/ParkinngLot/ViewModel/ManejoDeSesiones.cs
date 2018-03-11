@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
+using Newtonsoft.Json;
 using ParkingLot.Model;
 
 namespace ParkingLot.ViewModel
@@ -31,10 +33,24 @@ namespace ParkingLot.ViewModel
                 }
             }
             return estadoUsuario;
+            /**
+             * Este codigo es para el .cs del view del login para poder hacer el post hacia el webservice
+             *
+            var info = "Tiene que ser el json del usuario y la contrasena";
+            string json = JsonConvert.SerializeObject(info);
+            var content = new StringContent(json);
+            var client = new HttpClient();
+            HttpResponseMessage response;
+            response = await client.PostAsync("uri del endpoint",content);
+             */
         }
 
         public void cerrarSesion()
-        {
+        { //codigo para hacer un get
+            var session = new HttpRequestMessage();
+            session.RequestUri = new Uri("endpoint del API");
+            session.Method = HttpMethod.Get;
+            session.Headers.Add("Accept", "application/json");
             //Debe de haber una variable de tipo session en el webservice para poder saber cual es el usuario loggeado
             string usuarioDesdeWebService = "test";
             for (int i = 0; i < Usuario.listaUsuarios.Count; i++)
@@ -48,7 +64,7 @@ namespace ParkingLot.ViewModel
         public void crearCuenta()
         {
             //Se tiene que hacer un insert a la base de datos, hacia la tabla usuario 
-
+           
         }
     }
 }
