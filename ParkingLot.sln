@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLot.Android", "ParkinngLot\ParkinngLot.Android\ParkingLot.Android.csproj", "{89A64414-CCDF-41B7-9598-28AC947F11DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLot", "ParkinngLot\ParkinngLot\ParkingLot.csproj", "{3AB296E3-4EAA-4F03-98A4-F300BBEA14DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A64414-CCDF-41B7-9598-28AC947F11DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3AB296E3-4EAA-4F03-98A4-F300BBEA14DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB296E3-4EAA-4F03-98A4-F300BBEA14DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB296E3-4EAA-4F03-98A4-F300BBEA14DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB296E3-4EAA-4F03-98A4-F300BBEA14DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC86B81B-3468-4CAC-91E2-399E6B9AF298}
+	EndGlobalSection
+EndGlobal
