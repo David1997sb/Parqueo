@@ -47,7 +47,7 @@ namespace ParkingLot.ViewModel
 
         public void crearCuenta()
         {
-            //Se tiene que hacer un insert a la base de datos, a la tabla usuario 
+            //Se tiene que hacer un insert a la base de datos, hacia la tabla usuario 
 
         }
     }
