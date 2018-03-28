@@ -12,30 +12,33 @@ using XamarinWebService;
 
 namespace XamarinWebService.Controllers
 {
+    [RoutePrefix("api/usuarios")]
     public class usuariosController : ApiController
     {
         private databaseXamarinEntities db = new databaseXamarinEntities();
 
         // GET: api/usuarios
-        public IQueryable<usuario> Getusuarios()
-        {
-            return db.usuarios;
-        }
+        
 
         // GET: api/usuarios/5
-        [ResponseType(typeof(usuario))]
-        public IHttpActionResult Getusuario(string id)
+        [HttpGet]
+        [Route("isUser/{user:alpha}/{pass:alpha}")]
+        public IHttpActionResult Getusuario(string user, string pass)
         {
-            usuario usuario = db.usuarios.Find(id);
+           
+           usuario usuario = db.usuarios.FirstOrDefault(a=> a.usuario1 == user && a.contrasena == pass);
+          
             if (usuario == null)
             {
+               
                 return NotFound();
             }
-
-            return Ok(usuario);
+           
+            return Ok();
         }
 
         // PUT: api/usuarios/5
+
         [ResponseType(typeof(void))]
         public IHttpActionResult Putusuario(string id, usuario usuario)
         {
@@ -71,6 +74,7 @@ namespace XamarinWebService.Controllers
         }
 
         // POST: api/usuarios
+        [HttpPost]
         [ResponseType(typeof(usuario))]
         public IHttpActionResult Postusuario(usuario usuario)
         {
