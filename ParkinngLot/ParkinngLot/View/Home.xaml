@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingLot.View.Home"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Spacing="10" >
+
+                <Image Source="image.png"
+                           Margin="50,40,50,40"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+
+                <Button x:Name="bntLogin"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Login"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="FillAndExpand"/>
+
+                <Button x:Name="btnSignIn"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Sign In"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
