@@ -57,9 +57,9 @@ bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb
 bin\Debug\System.pdb
+bin\Debug\System.Net.Http.pdb
 bin\Debug\System.Xml.pdb
 bin\Debug\System.Xml.Linq.pdb
-bin\Debug\System.Net.Http.pdb
 bin\Debug\System.Runtime.Serialization.pdb
 bin\Debug\System.ServiceModel.Internals.pdb
 bin\Debug\System.Data.pdb
@@ -81,9 +81,9 @@ obj\Debug\linksrc\mscorlib.pdb
 obj\Debug\linksrc\ParkingLot.pdb
 obj\Debug\linksrc\System.Core.pdb
 obj\Debug\linksrc\System.pdb
+obj\Debug\linksrc\System.Net.Http.pdb
 obj\Debug\linksrc\System.Xml.pdb
 obj\Debug\linksrc\System.Xml.Linq.pdb
-obj\Debug\linksrc\System.Net.Http.pdb
 obj\Debug\linksrc\System.Runtime.Serialization.pdb
 obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 obj\Debug\linksrc\System.Data.pdb
