@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingLot.View.SignIn"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Spacing="10" >
+
+                <Image Source="adduser.png"
+                       Margin="100,30,100,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtName"
+                       Placeholder="Nombre..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="LastName"
+                       Placeholder="Apellido..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtEmail"
+                       Placeholder="Correo Electrónico..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtUsername"
+                       Placeholder="Usuario..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtPassword"
+                       Placeholder="Contraseña..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       IsPassword="True"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Button x:Name="btnRegistra"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Registrarse"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
