@@ -11,7 +11,7 @@ namespace ParkingLot.ViewModel
 {
     class ManejoDeSesiones
     {
-            Usuario pruebaUsuario = new Usuario();
+            usuarioModel pruebaUsuario = new usuarioModel();
         static int idCont = 0;
         HttpClient client = new HttpClient();
 
@@ -23,7 +23,7 @@ namespace ParkingLot.ViewModel
             pruebaUsuario.telefono = "857555555";
             pruebaUsuario.password = "pass123";
             pruebaUsuario.id = idCont++;
-            Usuario.listaUsuarios.Add(pruebaUsuario);
+            usuarioModel.listaUsuarios.Add(pruebaUsuario);
         }
         public async System.Threading.Tasks.Task inicioDeSesionAsync()
         {
@@ -61,10 +61,10 @@ namespace ParkingLot.ViewModel
             session.Headers.Add("Accept", "application/json");
             //Debe de haber una variable de tipo session en el webservice para poder saber cual es el usuario loggeado
             string usuarioDesdeWebService = "test";
-            for (int i = 0; i < Usuario.listaUsuarios.Count; i++)
+            for (int i = 0; i < usuarioModel.listaUsuarios.Count; i++)
             {
-                if (Usuario.listaUsuarios[i].correo.Equals(usuarioDesdeWebService)){
-                    Usuario.listaUsuarios[i].estadoSesion = "Innactivo";
+                if (usuarioModel.listaUsuarios[i].correo.Equals(usuarioDesdeWebService)){
+                    usuarioModel.listaUsuarios[i].estadoSesion = "Innactivo";
                 }
             }
             }

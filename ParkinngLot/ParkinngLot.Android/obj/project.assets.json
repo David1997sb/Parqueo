@@ -963,11 +963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
+      "projectUniqueName": "C:\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
       "projectName": "ParkingLot.Android",
-      "projectPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
+      "projectPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
       "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\obj\\",
+      "outputPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -988,8 +988,8 @@
       "frameworks": {
         "monoandroid80": {
           "projectReferences": {
-            "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj": {
-              "projectPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj"
+            "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj": {
+              "projectPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj"
             }
           }
         }

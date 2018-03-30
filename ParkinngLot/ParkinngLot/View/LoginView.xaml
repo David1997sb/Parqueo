@@ -17,7 +17,8 @@
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding usuarioModel.nombre}"/>
 
                 <Entry x:Name="txtPass"
                        Placeholder="Contraseña..."
@@ -25,7 +26,8 @@
                        TextColor="Gray"
                        IsPassword="True"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding usuarioModel.password}"/>
 
                 <Label x:Name="lblForgot"
                        Text="¿Olvidó su contraseña?"

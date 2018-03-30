@@ -14,7 +14,8 @@ namespace ParkingLot.View
 	{
 		public Login ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+
 		}
 
         private void Recover_Clicked(object sender, EventArgs e)
