@@ -108,7 +108,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "ParkinngLot.Android.dll" comes first in this list. */
 		"ParkinngLot.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"ParkingLot.dll",
+		"System.Net.Http.Extensions.dll",
+		"System.Net.Http.Primitives.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",

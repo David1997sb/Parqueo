@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseXamarinModelStoreContainer" CdmEntityContainer="databaseXamarinEntities">
+    <EntitySetMapping Name="espacios">
+      <EntityTypeMapping TypeName="databaseXamarinModel.espacio">
+        <MappingFragment StoreEntitySet="espacio">
+          <ScalarProperty Name="id_espacio" ColumnName="id_espacio" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="hora_entrada" ColumnName="hora_entrada" />
+          <ScalarProperty Name="hora_salida" ColumnName="hora_salida" />
+          <ScalarProperty Name="tiempo_reserva" ColumnName="tiempo_reserva" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="parqueo_id_localidad" ColumnName="parqueo_id_localidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facturas">
+      <EntityTypeMapping TypeName="databaseXamarinModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="id_factura" ColumnName="id_factura" />
+          <ScalarProperty Name="espacio_id_espacio" ColumnName="espacio_id_espacio" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parqueos">
+      <EntityTypeMapping TypeName="databaseXamarinModel.parqueo">
+        <MappingFragment StoreEntitySet="parqueo">
+          <ScalarProperty Name="id_localidad" ColumnName="id_localidad" />
+          <ScalarProperty Name="localidad" ColumnName="localidad" />
+          <ScalarProperty Name="cantidad_espacios" ColumnName="cantidad_espacios" />
+          <ScalarProperty Name="nombre_parqueo" ColumnName="nombre_parqueo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="databaseXamarinModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="contrasena" ColumnName="contrasena" />
+          <ScalarProperty Name="placa_vehiculo" ColumnName="placa_vehiculo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

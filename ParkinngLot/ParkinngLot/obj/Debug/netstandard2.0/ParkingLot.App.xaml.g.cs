@@ -11,7 +11,7 @@
 namespace ParkinngLot {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Nicol\\Desktop\\ParkinngLot\\ParkinngLot\\ParkinngLot\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

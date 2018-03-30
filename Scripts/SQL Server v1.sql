@@ -59,3 +59,4 @@ CREATE TABLE factura (
 	CONSTRAINT cK_idfactura CHECK(id_factura > 0),
 	CONSTRAINT cK_monto CHECK(monto > 0)
 );
+

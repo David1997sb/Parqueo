@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingLot.View.Login"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Spacing="10" >
+
+                <Image Source="home.png"
+                       Margin="100,40,100,0"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtUser"
+                       Placeholder="Usuario..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       Text="{Binding usuarioModel.nombre}"/>
+
+                <Entry x:Name="txtPass"
+                       Placeholder="Contraseña..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       IsPassword="True"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       Text="{Binding usuarioModel.password}"/>
+
+                <Label x:Name="lblForgot"
+                       Text="¿Olvidó su contraseña?"
+                       TextColor="Gray"
+                       HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Recover_Clicked"/>
+                    </Label.GestureRecognizers>
+
+                </Label>
+
+                <Button x:Name="bntLogin"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Ingresar"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

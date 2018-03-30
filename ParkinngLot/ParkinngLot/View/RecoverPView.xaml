@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingLot.View.RecoverP"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Spacing="10" >
+
+                <Image Source="fp.png"
+                       Margin="100,40,100,40"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Entry x:Name="txtEmail"
+                       Placeholder="Correo Electrónico..."
+                       WidthRequest="250"
+                       TextColor="Gray"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"/>
+
+                <Button x:Name="btnRecover"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Recuperar Contraseña"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databaseXamarinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="espacio">
+    <Key>
+      <PropertyRef Name="id_espacio" />
+    </Key>
+    <Property Name="id_espacio" Type="int" Nullable="false" />
+    <Property Name="estado" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="hora_entrada" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="hora_salida" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="tiempo_reserva" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="usuario" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="parqueo_id_localidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="factura">
+    <Key>
+      <PropertyRef Name="id_factura" />
+    </Key>
+    <Property Name="id_factura" Type="int" Nullable="false" />
+    <Property Name="espacio_id_espacio" Type="int" Nullable="false" />
+    <Property Name="usuario" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="monto" Type="decimal" Precision="20" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="parqueo">
+    <Key>
+      <PropertyRef Name="id_localidad" />
+    </Key>
+    <Property Name="id_localidad" Type="int" Nullable="false" />
+    <Property Name="localidad" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="cantidad_espacios" Type="int" Nullable="false" />
+    <Property Name="nombre_parqueo" Type="varchar" MaxLength="45" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usuario" />
+    </Key>
+    <Property Name="usuario" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="35" Nullable="false" />
+    <Property Name="correo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="contrasena" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="placa_vehiculo" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="espacio_parqueo_fk">
+    <End Role="parqueo" Type="Self.parqueo" Multiplicity="1" />
+    <End Role="espacio" Type="Self.espacio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parqueo">
+        <PropertyRef Name="id_localidad" />
+      </Principal>
+      <Dependent Role="espacio">
+        <PropertyRef Name="parqueo_id_localidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="espacio_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="espacio" Type="Self.espacio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="usuario" />
+      </Principal>
+      <Dependent Role="espacio">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="factura_espacio_fk">
+    <End Role="espacio" Type="Self.espacio" Multiplicity="1" />
+    <End Role="factura" Type="Self.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="espacio">
+        <PropertyRef Name="id_espacio" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="espacio_id_espacio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="factura_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="factura" Type="Self.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="usuario" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="databaseXamarinModelStoreContainer">
+    <EntitySet Name="espacio" EntityType="Self.espacio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="factura" EntityType="Self.factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="parqueo" EntityType="Self.parqueo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="espacio_parqueo_fk" Association="Self.espacio_parqueo_fk">
+      <End Role="parqueo" EntitySet="parqueo" />
+      <End Role="espacio" EntitySet="espacio" />
+    </AssociationSet>
+    <AssociationSet Name="espacio_usuario_fk" Association="Self.espacio_usuario_fk">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="espacio" EntitySet="espacio" />
+    </AssociationSet>
+    <AssociationSet Name="factura_espacio_fk" Association="Self.factura_espacio_fk">
+      <End Role="espacio" EntitySet="espacio" />
+      <End Role="factura" EntitySet="factura" />
+    </AssociationSet>
+    <AssociationSet Name="factura_usuario_fk" Association="Self.factura_usuario_fk">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="factura" EntitySet="factura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

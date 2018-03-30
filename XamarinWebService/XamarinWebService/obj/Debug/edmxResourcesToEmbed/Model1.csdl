@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databaseXamarinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="espacio">
+    <Key>
+      <PropertyRef Name="id_espacio" />
+    </Key>
+    <Property Name="id_espacio" Type="Int32" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="hora_entrada" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="hora_salida" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="tiempo_reserva" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="usuario" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parqueo_id_localidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="parqueo" Relationship="Self.espacio_parqueo_fk" FromRole="espacio" ToRole="parqueo" />
+    <NavigationProperty Name="usuario1" Relationship="Self.espacio_usuario_fk" FromRole="espacio" ToRole="usuario" />
+    <NavigationProperty Name="facturas" Relationship="Self.factura_espacio_fk" FromRole="espacio" ToRole="factura" />
+  </EntityType>
+  <EntityType Name="factura">
+    <Key>
+      <PropertyRef Name="id_factura" />
+    </Key>
+    <Property Name="id_factura" Type="Int32" Nullable="false" />
+    <Property Name="espacio_id_espacio" Type="Int32" Nullable="false" />
+    <Property Name="usuario" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="monto" Type="Decimal" Precision="20" Scale="0" Nullable="false" />
+    <NavigationProperty Name="espacio" Relationship="Self.factura_espacio_fk" FromRole="factura" ToRole="espacio" />
+    <NavigationProperty Name="usuario1" Relationship="Self.factura_usuario_fk" FromRole="factura" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="parqueo">
+    <Key>
+      <PropertyRef Name="id_localidad" />
+    </Key>
+    <Property Name="id_localidad" Type="Int32" Nullable="false" />
+    <Property Name="localidad" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cantidad_espacios" Type="Int32" Nullable="false" />
+    <Property Name="nombre_parqueo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="espacios" Relationship="Self.espacio_parqueo_fk" FromRole="parqueo" ToRole="espacio" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="usuario1" />
+    </Key>
+    <Property Name="usuario1" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contrasena" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="placa_vehiculo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="espacios" Relationship="Self.espacio_usuario_fk" FromRole="usuario" ToRole="espacio" />
+    <NavigationProperty Name="facturas" Relationship="Self.factura_usuario_fk" FromRole="usuario" ToRole="factura" />
+  </EntityType>
+  <Association Name="espacio_parqueo_fk">
+    <End Role="parqueo" Type="Self.parqueo" Multiplicity="1" />
+    <End Role="espacio" Type="Self.espacio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parqueo">
+        <PropertyRef Name="id_localidad" />
+      </Principal>
+      <Dependent Role="espacio">
+        <PropertyRef Name="parqueo_id_localidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="espacio_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="espacio" Type="Self.espacio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="usuario1" />
+      </Principal>
+      <Dependent Role="espacio">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="factura_espacio_fk">
+    <End Role="espacio" Type="Self.espacio" Multiplicity="1" />
+    <End Role="factura" Type="Self.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="espacio">
+        <PropertyRef Name="id_espacio" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="espacio_id_espacio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="factura_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="factura" Type="Self.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="usuario1" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="databaseXamarinEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="espacios" EntityType="Self.espacio" />
+    <EntitySet Name="facturas" EntityType="Self.factura" />
+    <EntitySet Name="parqueos" EntityType="Self.parqueo" />
+    <EntitySet Name="usuarios" EntityType="Self.usuario" />
+    <AssociationSet Name="espacio_parqueo_fk" Association="Self.espacio_parqueo_fk">
+      <End Role="parqueo" EntitySet="parqueos" />
+      <End Role="espacio" EntitySet="espacios" />
+    </AssociationSet>
+    <AssociationSet Name="espacio_usuario_fk" Association="Self.espacio_usuario_fk">
+      <End Role="usuario" EntitySet="usuarios" />
+      <End Role="espacio" EntitySet="espacios" />
+    </AssociationSet>
+    <AssociationSet Name="factura_espacio_fk" Association="Self.factura_espacio_fk">
+      <End Role="espacio" EntitySet="espacios" />
+      <End Role="factura" EntitySet="facturas" />
+    </AssociationSet>
+    <AssociationSet Name="factura_usuario_fk" Association="Self.factura_usuario_fk">
+      <End Role="usuario" EntitySet="usuarios" />
+      <End Role="factura" EntitySet="facturas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
