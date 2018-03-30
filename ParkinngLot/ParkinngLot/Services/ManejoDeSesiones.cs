@@ -14,9 +14,29 @@ namespace ParkingLot.ViewModel
             usuarioModel pruebaUsuario = new usuarioModel();
         static int idCont = 0;
         HttpClient client = new HttpClient();
+        HttpResponseMessage response;
 
 
-        public ManejoDeSesiones()
+        public async System.Threading.Tasks.Task<bool> getSignInInfoAsync(string user, string password)
+        {
+            bool isOk;
+            var info = "{'user':" + user + ',' + "pass" + ':' + password + "}";
+            string json = JsonConvert.SerializeObject(info);
+            var content = new StringContent(json);
+            response = await client.PostAsync("http://localhost:50289/api/usuarios/isUser", content);
+            int statusCode = (int)response.StatusCode;
+            if (statusCode!=200)
+            {
+                isOk = false;
+            }
+            else
+            {
+                isOk = true;
+            }
+            return isOk;
+        }
+
+       /* public ManejoDeSesiones()
         {
             pruebaUsuario.nombre = "David";
             pruebaUsuario.apellido= "Salas";
@@ -24,9 +44,9 @@ namespace ParkingLot.ViewModel
             pruebaUsuario.password = "pass123";
             pruebaUsuario.id = idCont++;
             usuarioModel.listaUsuarios.Add(pruebaUsuario);
-        }
-        public async System.Threading.Tasks.Task inicioDeSesionAsync()
-        {
+        }*/
+       // public async System.Threading.Tasks.Task inicioDeSesionAsync()
+        //{
             /* bool estadoUsuario = false;
              string correoUsuario = "salasbar97@gmial.com";//Esto debe de ser el valor que el usuario pone desde el view de login
              for(int i=0; i < Usuario.listaUsuarios.Count; i++)
@@ -37,7 +57,7 @@ namespace ParkingLot.ViewModel
                  }
              }*/
             // return estadoUsuario;
-            using (var wb = new WebClient())
+           /* using (var wb = new WebClient())
             {
                 var data = new NameValueCollection();
                 data["username"] = "myUser";
@@ -53,7 +73,7 @@ namespace ParkingLot.ViewModel
              response = await client.PostAsync("http://localhost:50289/api/usuarios/isUser", content);*/
         }   
 
-        public void cerrarSesion()
+        /*public void cerrarSesion()
         { //codigo para hacer un get
             var session = new HttpRequestMessage();
             session.RequestUri = new Uri("endpoint del API");
@@ -73,6 +93,6 @@ namespace ParkingLot.ViewModel
         {
             //Se tiene que hacer un insert a la base de datos, hacia la tabla usuario 
            
-        }
+        }*/
     }
 }

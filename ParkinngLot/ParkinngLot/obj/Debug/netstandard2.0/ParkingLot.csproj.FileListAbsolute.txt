@@ -21,7 +21,6 @@ C:\ParkinngLot\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.Assem
 C:\ParkinngLot\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.pdb
 C:\ParkinngLot\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.Page1.xaml.g.cs
-C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.csprojResolveAssemblyReference.cache
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.csproj.CoreCompileInputs.cache
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.App.xaml.g.cs
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.MainPage.xaml.g.cs

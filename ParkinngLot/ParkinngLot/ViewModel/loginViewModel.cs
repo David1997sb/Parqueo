@@ -12,6 +12,7 @@ namespace ParkingLot.ViewModel
     class loginViewModel : INotifyPropertyChanged
     {
         usuarioModel usuarioMod = new usuarioModel();
+        ManejoDeSesiones sesiones = new ManejoDeSesiones();
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -29,16 +30,17 @@ namespace ParkingLot.ViewModel
         {
             get
             {
-                return new Command(() =>
+                return new Command(async () =>
                 {
-                    if (usuarioMod.nombre == "admin" && usuarioMod.password == "admin")
+                    bool isLogged =await sesiones.getSignInInfoAsync(usuarioMod.nombre, usuarioMod.password);
+                    if (isLogged==true)
                     {
-                        App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
+                        await App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
                         // Open next page
                     }
                     else
                     {
-                        App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
+                        await App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
                     }
                 });
             }
