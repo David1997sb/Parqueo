@@ -3,9 +3,13 @@ C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\FormsVie
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\mscorlib.dll
+C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\ParkingLot.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Core.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.dll
+C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Net.Http.dll
+C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Net.Http.Extensions.dll
+C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Net.Http.Primitives.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Runtime.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Xml.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Xml.Linq.dll
@@ -38,7 +42,6 @@ C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.L
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
-C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Net.Http.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\netstandard.dll
@@ -59,6 +62,7 @@ C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.S
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Security.SecureString.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Web.Services.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
+C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Net.Primitives.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.ObjectModel.dll
 C:\ParkinngLot\ParkinngLot\ParkinngLot.Android\obj\Debug\android\assets\System.Globalization.dll

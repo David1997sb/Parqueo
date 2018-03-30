@@ -26,3 +26,6 @@ System.ComponentModel
 System.Reflection.Extensions
 Plugin.Settings.Abstractions
 Plugin.Settings
+Newtonsoft.Json
+System.Net.Http.Extensions
+System.Net.Http.Primitives

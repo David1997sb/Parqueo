@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using Newtonsoft.Json;
@@ -11,6 +13,8 @@ namespace ParkingLot.ViewModel
     {
             Usuario pruebaUsuario = new Usuario();
         static int idCont = 0;
+        HttpClient client = new HttpClient();
+
 
         public ManejoDeSesiones()
         {
@@ -21,29 +25,33 @@ namespace ParkingLot.ViewModel
             pruebaUsuario.id = idCont++;
             Usuario.listaUsuarios.Add(pruebaUsuario);
         }
-        public bool inicioDeSesion()
+        public async System.Threading.Tasks.Task inicioDeSesionAsync()
         {
-            bool estadoUsuario = false;
-            string correoUsuario = "salasbar97@gmial.com";//Esto debe de ser el valor que el usuario pone desde el view de login
-            for(int i=0; i < Usuario.listaUsuarios.Count; i++)
+            /* bool estadoUsuario = false;
+             string correoUsuario = "salasbar97@gmial.com";//Esto debe de ser el valor que el usuario pone desde el view de login
+             for(int i=0; i < Usuario.listaUsuarios.Count; i++)
+             {
+                 if (Usuario.listaUsuarios[i].correo.Equals(correoUsuario)&& Usuario.listaUsuarios[i].estadoSesion.Equals("Innactivo"))
+                 {
+                     estadoUsuario = true;
+                 }
+             }*/
+            // return estadoUsuario;
+            using (var wb = new WebClient())
             {
-                if (Usuario.listaUsuarios[i].correo.Equals(correoUsuario)&& Usuario.listaUsuarios[i].estadoSesion.Equals("Innactivo"))
-                {
-                    estadoUsuario = true;
-                }
+                var data = new NameValueCollection();
+                data["username"] = "myUser";
+                data["password"] = "myPassword";
+
+                var response = wb.UploadValues(url, "POST", data);
+                string responseInString = Encoding.UTF8.GetString(response);
             }
-            return estadoUsuario;
-            /**
-             * Este codigo es para el .cs del view del login para poder hacer el post hacia el webservice
-             *
-            var info = "Tiene que ser el json del usuario y la contrasena";
-            string json = JsonConvert.SerializeObject(info);
-            var content = new StringContent(json);
-            var client = new HttpClient();
-            HttpResponseMessage response;
-            response = await client.PostAsync("uri del endpoint",content);
-             */
-        }
+            /* var info = "{'user':'david',''pass': 'esx'}";
+             string json = JsonConvert.SerializeObject(info);
+             var content = new StringContent(json);
+             HttpResponseMessage response;
+             response = await client.PostAsync("http://localhost:50289/api/usuarios/isUser", content);*/
+        }   
 
         public void cerrarSesion()
         { //codigo para hacer un get

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v7.1": {
+    "MonoAndroid,Version=v8.0": {
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -944,7 +944,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v7.1": [
+    "MonoAndroid,Version=v8.0": [
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 11.0.1",
       "ParkingLot >= 1.0.0",
@@ -957,41 +957,46 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GUILLERMO\\.nuget\\packages\\": {}
+    "C:\\Users\\Nicol\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
+      "projectUniqueName": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
       "projectName": "ParkingLot.Android",
-      "projectPath": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
-      "packagesPath": "C:\\Users\\GUILLERMO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot.Android\\obj\\",
+      "projectPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\ParkingLot.Android.csproj",
+      "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+      "outputPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\GUILLERMO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid71"
+        "monoandroid80"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid71": {
+        "monoandroid80": {
           "projectReferences": {
-            "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj": {
-              "projectPath": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj"
+            "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj": {
+              "projectPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "monoandroid71": {
+      "monoandroid80": {
         "dependencies": {
           "Microsoft.Net.Http": {
             "target": "Package",
