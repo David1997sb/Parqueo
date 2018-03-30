@@ -2,3 +2,7 @@
 XamarinWebService/.vs/config/applicationhost.config
 XamarinWebService/.vs/XamarinWebService/v15/Server/sqlite3/storage.ide-shm
 XamarinWebService/.vs/XamarinWebService/v15/Server/sqlite3/storage.ide-shm
+.vs/ParkingLot/v15/.suo
+.vs/ParkingLot/v15/Server/sqlite3/storage.ide
+*.ide-shm
+*.ide-wal
