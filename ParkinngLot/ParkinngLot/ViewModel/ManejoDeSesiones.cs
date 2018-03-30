@@ -43,8 +43,8 @@ namespace ParkingLot.ViewModel
                 data["username"] = "myUser";
                 data["password"] = "myPassword";
 
-                var response = wb.UploadValues(url, "POST", data);
-                string responseInString = Encoding.UTF8.GetString(response);
+               // var response = wb.UploadValues(url, "POST", data);
+                //string responseInString = Encoding.UTF8.GetString(response);
             }
             /* var info = "{'user':'david',''pass': 'esx'}";
              string json = JsonConvert.SerializeObject(info);

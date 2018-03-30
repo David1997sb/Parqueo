@@ -1,5 +1,8 @@
 FormsViewGroup
+Newtonsoft.Json
 ParkingLot
+System.Net.Http.Extensions
+System.Net.Http.Primitives
 System.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations
@@ -24,8 +27,3 @@ Xamarin.Forms.Xaml
 netstandard
 System.ComponentModel
 System.Reflection.Extensions
-Plugin.Settings.Abstractions
-Plugin.Settings
-Newtonsoft.Json
-System.Net.Http.Extensions
-System.Net.Http.Primitives
