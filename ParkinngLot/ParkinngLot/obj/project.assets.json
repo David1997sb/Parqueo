@@ -636,11 +636,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
       "projectName": "ParkingLot",
-      "projectPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
       "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\ParkinngLot\\ParkinngLot\\ParkinngLot\\obj\\",
+      "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
