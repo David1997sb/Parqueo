@@ -29,7 +29,7 @@ CREATE TABLE usuario (
 
 CREATE TABLE espacio (
     id_espacio             INT NOT NULL,
-    estado                 CHAR(1) NOT NULL,
+    estado                 INT NOT NULL,
     hora_entrada           DATETIME2 NOT NULL,
     hora_salida            DATETIME2 NOT NULL,
     tiempo_reserva         DATETIME2 NOT NULL,
@@ -42,6 +42,7 @@ CREATE TABLE espacio (
         	REFERENCES usuario ( usuario ),
 	CONSTRAINT cK_idespacio CHECK(id_espacio > 0),
 	CONSTRAINT cK_horario CHECK(hora_salida > hora_entrada),
+	CONSTRAINT cK_estado CHECK(estado IN (1,2,3))
 );
 
 
@@ -58,3 +59,4 @@ CREATE TABLE factura (
 	CONSTRAINT cK_idfactura CHECK(id_factura > 0),
 	CONSTRAINT cK_monto CHECK(monto > 0)
 );
+
