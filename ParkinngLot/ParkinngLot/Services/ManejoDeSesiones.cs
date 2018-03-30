@@ -16,14 +16,13 @@ namespace ParkingLot.ViewModel
         HttpClient client = new HttpClient();
         HttpResponseMessage response;
 
-
         public async System.Threading.Tasks.Task<bool> getSignInInfoAsync(string user, string password)
         {
             bool isOk;
-            var info = "{'user':" + user + ',' + "pass" + ':' + password + "}";
-            string json = JsonConvert.SerializeObject(info);
-            var content = new StringContent(json);
-            response = await client.PostAsync("http://localhost:50289/api/usuarios/isUser", content);
+            var session = new HttpRequestMessage();
+            session.RequestUri = new Uri("http://localhost:50289/api/usuarios/isUser?"+"user="+user+"&"+"pass="+password);
+            session.Method = HttpMethod.Get;
+            session.Headers.Add("Accept", "application/json"); 
             int statusCode = (int)response.StatusCode;
             if (statusCode!=200)
             {
