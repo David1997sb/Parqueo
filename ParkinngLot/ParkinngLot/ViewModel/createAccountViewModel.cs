@@ -38,7 +38,7 @@ namespace ParkingLot.ViewModel
                     string usuario = usuarioMod.usuario1;
                     string contrasena = usuarioMod.Contrasena;
                     string correo = usuarioMod.correo;
-                    bool success = await sesiones.postCreateUserAsync(usuario, contrasena, placa, nombre, apellido, correo);
+                    bool success = true; //await sesiones.postCreateUserAsync(usuario, contrasena, placa, nombre, apellido, correo);
                     if (success == true)
                     {
                         await App.Current.MainPage.DisplayAlert("Notification", "Successfully creation account", "Okay");
