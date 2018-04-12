@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ParkingLot.Model;
+using ParkingLot.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,12 @@ namespace ParkingLot.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-		public Login ()
+
+        public Login ()
 		{
-			InitializeComponent();
+
+            InitializeComponent();
+            BindingContext = new loginViewModel();
 
 		}
 
@@ -22,5 +27,7 @@ namespace ParkingLot.View
         {
             Navigation.PushAsync(new RecoverP());
         }
+
+      
     }
 }

@@ -17,28 +17,32 @@
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding nombre, Mode=TwoWay}"/>
 
                 <Entry x:Name="LastName"
                        Placeholder="Apellido..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding apellido, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtEmail"
                        Placeholder="Correo Electrónico..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding correo, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtUsername"
                        Placeholder="Usuario..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding usuario1, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtPassword"
                        Placeholder="Contraseña..."
@@ -46,7 +50,8 @@
                        TextColor="Gray"
                        IsPassword="True"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding contrasena, Mode=TwoWay}"/>
 
                 <Button x:Name="btnRegistra"
                         Margin="50,0,50,0" 
