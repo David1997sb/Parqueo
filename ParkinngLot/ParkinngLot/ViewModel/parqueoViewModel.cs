@@ -38,7 +38,7 @@ namespace ParkingLot.ViewModel
 
 			};
 
-
+			
 
 		}
 
