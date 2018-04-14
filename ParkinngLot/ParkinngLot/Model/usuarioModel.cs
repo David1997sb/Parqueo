@@ -15,7 +15,7 @@ namespace ParkingLot.Model
         public static string nombre { get; set; }
         public string apellido { get; set; }
         public string placa { get; set; }
-        public static string usuario1 { get; set; }
+        public string usuario1 { get; set; }
         public static string contrasena { get; set; }
         public string correo { get; set; }
 

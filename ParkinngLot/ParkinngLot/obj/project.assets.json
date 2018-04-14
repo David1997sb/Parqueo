@@ -626,7 +626,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Colochos\\.nuget\\packages\\": {},
+    "C:\\Users\\Nicol\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -636,18 +636,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
       "projectName": "ParkingLot",
-      "projectPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
-      "packagesPath": "C:\\Users\\Colochos\\.nuget\\packages\\",
-      "outputPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\obj\\",
+      "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\Parqueo\\ParkinngLot\\ParkinngLot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Colochos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -704,7 +704,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Bcl 1.1.10\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'Microsoft.Bcl 1.1.10' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Bcl",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
@@ -714,7 +714,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.Net.Http 2.2.29\" se restauró con \".NETFramework,Version=v4.6.1\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'Microsoft.Net.Http 2.2.29' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
