@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -8,16 +10,47 @@ using Xamarin.Forms.Xaml;
 
 namespace ParkingLot.Model
 {
-    class usuarioModel
+    class usuarioModel: INotifyPropertyChanged
     {
-        public string  nombre { get; set; }
-        public string  apellido { get; set; }
-        public string telefono { get; set; }
-        public string  usuario { get; set; }    
-        public int id { get; set; }
-        public string password { get; set; }
+        public static string nombre { get; set; }
+        public string apellido { get; set; }
+        public string placa { get; set; }
+        public string usuario1 { get; set; }
+        public static string contrasena { get; set; }
         public string correo { get; set; }
-        public string estadoSesion { get; set; }
-        public static List<usuarioModel> listaUsuarios = new List<usuarioModel>();
+
+        public string Contrasena
+        {
+            get { return contrasena; }
+            set
+            {
+                if (value != contrasena)
+                {
+                    contrasena = value;
+                    OnPropertyChanged("Contrasena");
+                }
+            }
+        }
+
+        public string Nombre
+        {
+            get { return nombre; }
+            set
+            {
+                if (value != nombre)
+                {
+                    nombre = value;
+                    OnPropertyChanged("Nombre");
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
+

@@ -5,27 +5,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ParkingLot.ViewModel
 {
-    class loginViewModel : usuarioModel
+    class createAccountViewModel : INotifyPropertyChanged
     {
-        public ICommand saveCommand { get; set; }
-        usuarioModel user = new usuarioModel();
-       
+        usuarioModel usuarioMod = new usuarioModel();
+        
 
-        public ICommand SaveCommand { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-
-        public usuarioModel usuarioModel
+        public nuevoUsuarioModel nuevoUsuarioModel
         {
-            get { return user; }
+            get { return usuarioMod; }
             set
             {
-                user = value;
+                usuarioMod = value;
                 OnPropertyChanged();
             }
         }
@@ -36,7 +32,7 @@ namespace ParkingLot.ViewModel
             {
                 return new Command(() =>
                 {
-                    if (usuarioModel.Nombre == "admin" && usuarioModel.Contrasena == "admin")
+                    if (Model.nuevoUsuarioModel.Usuario1 != null && nuevoUsuarioModel.Contrasena != null)
                     {
                         App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
                         // Open next page
@@ -48,6 +44,10 @@ namespace ParkingLot.ViewModel
                 });
             }
         }
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
-
