@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParkingLot.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace ParkingLot.View
 		public SignIn ()
 		{
 			InitializeComponent ();
+            BindingContext = new nuevoUsuarioModel();
 		}
 	}
 }

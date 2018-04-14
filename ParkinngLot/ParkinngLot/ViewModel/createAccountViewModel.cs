@@ -11,7 +11,7 @@ namespace ParkingLot.ViewModel
 {
     class createAccountViewModel : INotifyPropertyChanged
     {
-        usuarioModel usuarioMod = new usuarioModel();
+        nuevoUsuarioModel usuarioMod = new nuevoUsuarioModel();
         
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -26,20 +26,20 @@ namespace ParkingLot.ViewModel
             }
         }
 
-        public Command LoginCommand
+        public Command CreateAccountCommand
         {
             get
             {
                 return new Command(() =>
                 {
-                    if (Model.nuevoUsuarioModel.Usuario1 != null && nuevoUsuarioModel.Contrasena != null)
+                    if (nuevoUsuarioModel.Nombre != null && nuevoUsuarioModel.Apellido!= null && nuevoUsuarioModel.Usuario !=null && nuevoUsuarioModel.Contrasena !=null && nuevoUsuarioModel.Placa != null && nuevoUsuarioModel.Correo!=null)
                     {
-                        App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Se creo existosamente la contraseña", "Okay");
                         // Open next page
                     }
                     else
                     {
-                        App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Error, verifica la informacion", "Okay");
                     }
                 });
             }

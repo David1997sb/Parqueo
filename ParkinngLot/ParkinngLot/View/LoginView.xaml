@@ -20,7 +20,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding Nombre,Mode=TwoWay}"/>
+                       Text="{Binding Usuario,Mode=TwoWay}"/>
 
                 <Entry x:Name="txtPass"
                        Placeholder="Contraseña..."

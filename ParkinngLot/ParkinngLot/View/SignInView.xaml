@@ -18,7 +18,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding nombre, Mode=TwoWay}"/>
+                       Text="{Binding Nombre, Mode=TwoWay}"/>
 
                 <Entry x:Name="LastName"
                        Placeholder="Apellido..."
@@ -26,7 +26,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding apellido, Mode=TwoWay}"/>
+                       Text="{Binding Apellido, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtEmail"
                        Placeholder="Correo Electrónico..."
@@ -34,7 +34,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding correo, Mode=TwoWay}"/>
+                       Text="{Binding Correo, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtUsername"
                        Placeholder="Usuario..."
@@ -42,7 +42,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding usuario1, Mode=TwoWay}"/>
+                       Text="{Binding Usuario, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtPassword"
                        Placeholder="Contraseña..."
@@ -51,7 +51,7 @@
                        IsPassword="True"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding contrasena, Mode=TwoWay}"/>
+                       Text="{Binding Contrasena, Mode=TwoWay}"/>
 
                 <Button x:Name="btnRegistra"
                         Margin="50,0,50,0" 
@@ -59,7 +59,8 @@
                         TextColor="White" 
                         Text="Registrarse"  
                         BackgroundColor = "#FE9A2E"
-                        HorizontalOptions="FillAndExpand"/>
+                        HorizontalOptions="FillAndExpand"
+                        Command="{Binding CreateAccountCommand}"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
