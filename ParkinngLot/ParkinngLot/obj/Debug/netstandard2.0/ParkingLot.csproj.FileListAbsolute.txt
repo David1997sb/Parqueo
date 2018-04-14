@@ -35,3 +35,4 @@ C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netsta
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.deps.json
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.dll
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.pdb
+C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.csprojResolveAssemblyReference.cache

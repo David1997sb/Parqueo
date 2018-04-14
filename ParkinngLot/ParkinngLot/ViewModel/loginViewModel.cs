@@ -5,23 +5,27 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ParkingLot.ViewModel
 {
-    class loginViewModel : INotifyPropertyChanged
+    class loginViewModel : usuarioModel
     {
-        usuarioModel usuarioMod = new usuarioModel();
-        ManejoDeSesiones sesiones = new ManejoDeSesiones();
+        public ICommand saveCommand { get; set; }
+        usuarioModel user = new usuarioModel();
+       
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public ICommand SaveCommand { get; set; }
 
-        public usuarioModel usuarioModel 
+
+        public usuarioModel usuarioModel
         {
-            get { return usuarioMod; }
+            get { return user; }
             set
             {
-                usuarioMod = value;
+                user = value;
                 OnPropertyChanged();
             }
         }
@@ -30,24 +34,20 @@ namespace ParkingLot.ViewModel
         {
             get
             {
-                return new Command(async () =>
+                return new Command(() =>
                 {
-                    bool isLogged =await sesiones.getSignInInfoAsync(usuarioMod.nombre, usuarioMod.password);
-                    if (isLogged==true)
+                    if (usuarioModel.Usuario == "admin" && usuarioModel.Contrasena == "admin")
                     {
-                        await App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
                         // Open next page
                     }
                     else
                     {
-                        await App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
                     }
                 });
             }
         }
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
+

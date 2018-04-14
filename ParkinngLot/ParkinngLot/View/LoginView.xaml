@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ParkingLot.View.Login"
-             BackgroundColor="#A9E2F3">
+             BackgroundColor="#A9E2F3"
+             xmlns:vm="clr-namespace:ParkingLot.ViewModel">
     <ContentPage.Content>
+        
         <Grid>
             <StackLayout Spacing="10" >
 
@@ -18,7 +20,7 @@
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding usuarioModel.nombre}"/>
+                       Text="{Binding Usuario,Mode=TwoWay}"/>
 
                 <Entry x:Name="txtPass"
                        Placeholder="Contraseña..."
@@ -27,7 +29,7 @@
                        IsPassword="True"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="Center"
-                       Text="{Binding usuarioModel.password}"/>
+                       Text="{Binding Contrasena, Mode=TwoWay}"/>
 
                 <Label x:Name="lblForgot"
                        Text="¿Olvidó su contraseña?"
@@ -45,7 +47,9 @@
                         TextColor="White" 
                         Text="Ingresar"  
                         BackgroundColor = "#FE9A2E"
-                        HorizontalOptions="FillAndExpand"/>
+                        HorizontalOptions="FillAndExpand"
+                        Command="{Binding LoginCommand}"
+                        />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

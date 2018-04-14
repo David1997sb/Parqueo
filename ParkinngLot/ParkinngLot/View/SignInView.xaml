@@ -17,28 +17,32 @@
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding Nombre, Mode=TwoWay}"/>
 
                 <Entry x:Name="LastName"
                        Placeholder="Apellido..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding Apellido, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtEmail"
                        Placeholder="Correo Electrónico..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding Correo, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtUsername"
                        Placeholder="Usuario..."
                        WidthRequest="250"
                        TextColor="Gray"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding Usuario, Mode=TwoWay}"/>
 
                 <Entry x:Name="txtPassword"
                        Placeholder="Contraseña..."
@@ -46,7 +50,8 @@
                        TextColor="Gray"
                        IsPassword="True"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Text="{Binding Contrasena, Mode=TwoWay}"/>
 
                 <Button x:Name="btnRegistra"
                         Margin="50,0,50,0" 
@@ -54,7 +59,8 @@
                         TextColor="White" 
                         Text="Registrarse"  
                         BackgroundColor = "#FE9A2E"
-                        HorizontalOptions="FillAndExpand"/>
+                        HorizontalOptions="FillAndExpand"
+                        Command="{Binding CreateAccountCommand}"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
