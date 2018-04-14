@@ -36,3 +36,17 @@ C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netsta
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.dll
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.pdb
 C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.csprojResolveAssemblyReference.cache
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.deps.json
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.dll
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\bin\Debug\netstandard2.0\ParkingLot.pdb
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.csproj.CoreCompileInputs.cache
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.App.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.MainPage.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.HomeView.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.LoginView.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.RecoverPView.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.SignInView.xaml.g.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.AssemblyInfoInputs.cache
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.AssemblyInfo.cs
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.dll
+C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.pdb

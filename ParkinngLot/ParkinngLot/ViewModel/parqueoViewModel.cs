@@ -42,19 +42,5 @@ namespace ParkingLot.ViewModel
 
 		}
 
-		public void recorreLista(int id) {
-
-			foreach(var x in parqueos)
-			{
-			 
-				if(x.idEspacio == id)
-				{
-					
-				}
-			}
-
-		}
-
-
     }
 }
