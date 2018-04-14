@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingLot.View.ParkingView"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" >
+
+                <Label Text="Parqueo 1" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+
+                <Image Source="parking.jpg"
+                       Margin="50,10,50,10"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Button x:Name="btnParqueo1"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Ingresar"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
+
+                <Label Text="Parqueo 2" HorizontalOptions="CenterAndExpand"/>
+
+                <Image Source="parking.jpg"
+                       Margin="50,10,50,10"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Button x:Name="btnParqueo2"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Ingresar"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
+
+                <Label Text="Parqueo 3" HorizontalOptions="CenterAndExpand"/>
+
+                <Image Source="parking.jpg"
+                        Margin="50,10,50,10"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <Button x:Name="btnParqueo3"
+                        Margin="50,0,50,0" 
+                        HeightRequest="50" 
+                        TextColor="White" 
+                        Text="Ingresar"  
+                        BackgroundColor = "#FE9A2E"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
