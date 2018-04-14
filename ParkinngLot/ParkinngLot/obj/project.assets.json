@@ -626,24 +626,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GUILLERMO\\.nuget\\packages\\": {},
+    "C:\\Users\\Colochos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "projectUniqueName": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
       "projectName": "ParkingLot",
-      "projectPath": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
-      "packagesPath": "C:\\Users\\GUILLERMO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\obj\\",
+      "projectPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\ParkingLot.csproj",
+      "packagesPath": "C:\\Users\\Colochos\\.nuget\\packages\\",
+      "outputPath": "C:\\Parqueo\\ParkinngLot\\ParkinngLot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\GUILLERMO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Colochos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

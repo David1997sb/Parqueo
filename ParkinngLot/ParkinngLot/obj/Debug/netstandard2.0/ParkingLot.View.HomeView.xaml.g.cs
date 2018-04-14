@@ -11,7 +11,7 @@
 namespace ParkingLot.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\GUILLERMO\\Parqueo\\ParkinngLot\\ParkinngLot\\View\\HomeView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Parqueo\\ParkinngLot\\ParkinngLot\\View\\HomeView.xaml")]
     public partial class Home : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

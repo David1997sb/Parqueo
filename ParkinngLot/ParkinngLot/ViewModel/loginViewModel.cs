@@ -43,7 +43,7 @@ namespace ParkingLot.ViewModel
                     if (usuarioModel.Usuario == "admin" && usuarioModel.Contrasena == "admin")
                     {
                         App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
-						App.Current.MainPage = new NavigationPage(new View.Home());
+						App.Current.MainPage = new NavigationPage(new View.ParkingView());
 						
 						// Open next page
 					}
