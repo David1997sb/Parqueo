@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+
 
 namespace ParkingLot.ViewModel
 {
@@ -18,6 +21,7 @@ namespace ParkingLot.ViewModel
        
 
         public ICommand SaveCommand { get; set; }
+
 
 
         public usuarioModel usuarioModel
@@ -39,8 +43,10 @@ namespace ParkingLot.ViewModel
                     if (usuarioModel.Usuario == "admin" && usuarioModel.Contrasena == "admin")
                     {
                         App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
-                        // Open next page
-                    }
+						App.Current.MainPage = new NavigationPage(new View.Home());
+						
+						// Open next page
+					}
                     else
                     {
                         App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");

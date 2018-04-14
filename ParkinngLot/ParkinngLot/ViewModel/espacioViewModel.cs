@@ -318,6 +318,17 @@ namespace ParkingLot.ViewModel
 				}
 			
 			};
+
+			 void buscaEspacio(int id) {
+				foreach (var x in espacios)
+				{
+					if (x.idEspacio == id) {
+						 //do Something
+					}
+
+				}
+			}
+			
 		}
 
 
