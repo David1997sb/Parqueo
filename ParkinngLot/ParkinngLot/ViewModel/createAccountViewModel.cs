@@ -12,11 +12,11 @@ namespace ParkingLot.ViewModel
     class createAccountViewModel : INotifyPropertyChanged
     {
         usuarioModel usuarioMod = new usuarioModel();
-        ManejoDeSesiones sesiones = new ManejoDeSesiones();
+        
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public usuarioModel usuarioModel
+        public nuevoUsuarioModel nuevoUsuarioModel
         {
             get { return usuarioMod; }
             set
@@ -26,27 +26,20 @@ namespace ParkingLot.ViewModel
             }
         }
 
-        public Command createUserCommand
+        public Command LoginCommand
         {
             get
             {
-                return new Command(async () =>
+                return new Command(() =>
                 {
-                    string nombre = usuarioMod.Nombre;
-                    string apellido = usuarioMod.apellido;
-                    string placa = usuarioMod.placa;
-                    string usuario = usuarioMod.usuario1;
-                    string contrasena = usuarioMod.Contrasena;
-                    string correo = usuarioMod.correo;
-                    bool success = true; //await sesiones.postCreateUserAsync(usuario, contrasena, placa, nombre, apellido, correo);
-                    if (success == true)
+                    if (Model.nuevoUsuarioModel.Usuario1 != null && nuevoUsuarioModel.Contrasena != null)
                     {
-                        await App.Current.MainPage.DisplayAlert("Notification", "Successfully creation account", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
                         // Open next page
                     }
                     else
                     {
-                        await App.Current.MainPage.DisplayAlert("Notification", "Error creating account", "Okay");
+                        App.Current.MainPage.DisplayAlert("Notification", "Error Login", "Okay");
                     }
                 });
             }
