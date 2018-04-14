@@ -32,15 +32,15 @@ namespace ParkingLot.Model
             }
         }
 
-        public string Nombre
+        public string Usuario
         {
-            get { return nombre; }
+            get { return usuario1; }
             set
             {
-                if (value != nombre)
+                if (value != usuario1)
                 {
-                    nombre = value;
-                    OnPropertyChanged("Nombre");
+                    usuario1 = value;
+                    OnPropertyChanged("Usuario");
                 }
             }
         }

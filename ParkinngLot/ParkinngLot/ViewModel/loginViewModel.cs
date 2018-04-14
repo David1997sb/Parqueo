@@ -36,7 +36,7 @@ namespace ParkingLot.ViewModel
             {
                 return new Command(() =>
                 {
-                    if (usuarioModel.Nombre == "admin" && usuarioModel.Contrasena == "admin")
+                    if (usuarioModel.Usuario == "admin" && usuarioModel.Contrasena == "admin")
                     {
                         App.Current.MainPage.DisplayAlert("Notification", "Successfully Login", "Okay");
                         // Open next page
