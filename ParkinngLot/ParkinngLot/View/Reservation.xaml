@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalUI.UI.Reservation"
+             BackgroundColor="#A9E2F3">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Espacios"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid VerticalOptions="CenterAndExpand"
+                  Margin="60,20,20,80"
+                  HorizontalOptions="Center"
+                  x:Name="Grid1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnCampo1" Text="1" Grid.Row="0" Grid.Column="0" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo2" Text="2" Grid.Row="0" Grid.Column="1" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo3" Text="3" Grid.Row="1" Grid.Column="0" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo4" Text="4" Grid.Row="1" Grid.Column="1" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo5" Text="5" Grid.Row="2" Grid.Column="0" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo6" Text="6" Grid.Row="2" Grid.Column="1" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo7" Text="7" Grid.Row="3" Grid.Column="0" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo8" Text="8" Grid.Row="3" Grid.Column="1" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo9" Text="9" Grid.Row="4" Grid.Column="0" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnCampo10" Text="10" Grid.Row="4" Grid.Column="1" BackgroundColor="LightGreen" TextColor="Black" Command="{Binding nombreComando}"></Button>
+
+                <Button x:Name="btnReserva"
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        TextColor="White" 
+                        Text="Reservar"  
+                        BackgroundColor = "#FE9A2E"
+                 />
+
+                <Button x:Name="btnOcupa"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        TextColor="White" 
+                        Text="Ocupar"  
+                        BackgroundColor = "#FE9A2E"
+                 />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

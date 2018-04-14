@@ -14,7 +14,7 @@ namespace ParkingLot.ViewModel
 			{
 				new espacioModel{
 					idEspacio=1,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -24,7 +24,7 @@ namespace ParkingLot.ViewModel
 				},
 				new espacioModel{
 					idEspacio=2,
-					estado="disponible",
+					estado="Reservado",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -35,7 +35,7 @@ namespace ParkingLot.ViewModel
 
 				new espacioModel{
 					idEspacio=3,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -47,7 +47,7 @@ namespace ParkingLot.ViewModel
 
 			new espacioModel{
 					idEspacio=4,
-					estado="disponible",
+					estado="Ocupado",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -58,7 +58,7 @@ namespace ParkingLot.ViewModel
 
 			new espacioModel{
 					idEspacio=5,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -68,7 +68,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=6,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -78,7 +78,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=7,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -88,7 +88,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=8,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -98,7 +98,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=9,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -108,7 +108,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=10,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -118,7 +118,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=1,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -128,7 +128,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=2,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -138,7 +138,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=3,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -148,7 +148,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=4,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -158,7 +158,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=5,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -168,7 +168,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=6,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -178,7 +178,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=7,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -188,7 +188,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=8,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -198,7 +198,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=9,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -208,7 +208,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=10,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -218,7 +218,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=1,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -228,7 +228,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=2,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -238,7 +238,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=3,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -248,7 +248,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=4,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -258,7 +258,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=5,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -268,7 +268,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=6,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -278,7 +278,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=7,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -288,7 +288,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=8,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -298,7 +298,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=9,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -308,7 +308,7 @@ namespace ParkingLot.ViewModel
 				},
 			new espacioModel{
 					idEspacio=10,
-					estado="disponible",
+					estado="Disponible",
 					horaEntrada= DateTime.Today,
 					horaSalida= DateTime.Today,
 					tiempoReserva=DateTime.Today,
@@ -321,7 +321,6 @@ namespace ParkingLot.ViewModel
 		}
 
 
-		
 
 
     }

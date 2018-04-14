@@ -50,3 +50,4 @@ C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\Park
 C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.AssemblyInfo.cs
 C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.dll
 C:\Users\GUILLERMO\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.pdb
+C:\Users\Nicol\Documents\GitHub\Parqueo\ParkinngLot\ParkinngLot\obj\Debug\netstandard2.0\ParkingLot.View.Reservation.xaml.g.cs

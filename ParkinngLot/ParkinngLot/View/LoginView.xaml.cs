@@ -20,6 +20,7 @@ namespace ParkingLot.View
 
             InitializeComponent();
             BindingContext = new loginViewModel();
+            this.txtUser.Text = "jj";
 
 		}
 
